@@ -1,0 +1,884 @@
+"C:\Program Files\Python35\python.exe" "D:\Program Files\JetBrains\PyCharm 2018.2.2\helpers\pydev\pydevd.py" --cmd-line --multiproc --qt-support=auto --client 127.0.0.1 --port 53828 --file E:/professionalSkill/AI/code/homework/week11/quiz-w11-rnn-master/Word2Vec.py
+pydev debugger: process 33292 is connecting
+Connected to pydev debugger (build 182.4323.49)
+Data size 1903073
+Unique chars count 6010
+Most common words (+UNK) [['UNK', 1196], ('。', 149620), ('\n', 117070), ('，', 108451), ('、', 19612)]
+Sample data [1508, 1834, 2, 2, 40, 614, 47, 9, 111, 117] ['潘', '阆', '\n', '\n', '酒', '泉', '子', '（', '十', '之']
+1834 阆 -> 2 
+1834 阆 -> 1508 潘
+2 
+ -> 1834 阆
+2 
+ -> 2 
+2 
+ -> 2 
+2 
+ -> 40 酒
+40 酒 -> 2 
+40 酒 -> 614 泉
+WARNING:tensorflow:From E:/professionalSkill/AI/code/homework/week11/quiz-w11-rnn-master/Word2Vec.py:182: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-12-09 13:25:09.334057: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+Initialized
+Average loss at step  0 :  195.68722534179688
+Nearest to 云: 阡, 棚, 狻, 兢, 荜, 申, 各, 则,
+Nearest to 楼: 嘲, 透, 韵, 瑚, 泊, 灌, 蝗, 螀,
+Nearest to 歌: 茸, 蠲, 夕, 泞, 拱, 戴, 餽, 反,
+Nearest to 与: 纵, 先, 轫, 诧, 燮, 纂, 招, 阒,
+Nearest to 多: 股, 无, 霖, 重, 裹, 菡, 县, 居,
+Nearest to 声: 早, 芮, 试, 枷, 涅, 蟾, 滥, 崄,
+Nearest to 南: 袂, 髡, 簪, 矣, 咫, 黜, 榕, UNK,
+Nearest to 三: 廷, 裾, 元, 义, 呖, 濑, 赊, 拐,
+Nearest to 人: 蛑, 蹭, 擎, 睽, 色, 掩, 也, 旁,
+Nearest to 香: 为, 持, 壳, 恨, 廊, 竟, 纾, 沲,
+Nearest to 花: 渡, 懔, 潦, 弭, 储, 聊, 醲, 砂,
+Nearest to 如: 缄, 谊, 笭, 题, 常, 筱, 认, 绸,
+Nearest to 烟: 咒, 口, 除, 飚, 俱, 哉, 霰, 凌,
+Nearest to 看: 填, 惹, 泮, 瘼, 跟, 翅, 纬, 塍,
+Nearest to 去: 饭, 癖, 房, 塔, 杰, 雅, 你, 限,
+Nearest to 得: 牵, 伴, 润, 戟, 续, 舳, 棠, 赓,
+Average loss at step  2000 :  21.441703266620635
+Average loss at step  4000 :  5.2943789799213405
+Average loss at step  6000 :  4.887857234835625
+Average loss at step  8000 :  4.67422156226635
+Average loss at step  10000 :  4.591216285943985
+Nearest to 云: 阡, 申, 宗, 薪, 暝, 霭, 续, 各,
+Nearest to 楼: 透, 嘲, 泊, 娉, 阁, 变, 氏, 伤,
+Nearest to 歌: 茸, 拱, 戴, 婵, 夕, 纹, 词, 摧,
+Nearest to 与: 先, 纵,  , 招, 队, 骚, 纂, 明,
+Nearest to 多: 无, 居, 县, 堕, 砚, 钏, 旅, 理,
+Nearest to 声: 蟾, 早, 试, 蹄, ., 逼, 醪, 程,
+Nearest to 南: 鹊, 咫, 袂,  , 簪, 绕, 宝, 矣,
+Nearest to 三: 廷, 裾, 元, 边, 荒, 妻, 促, 即,
+Nearest to 人: 也, 指, 擎, 殢, 久, 场, 睽,  ,
+Nearest to 香: 持, 廊, 堕, 竟,  , 柳, 频, 恨,
+Nearest to 花: 渡, 砂,  , 暇, 聊, 菊, 狼, 潦,
+Nearest to 如: 筱, 缄, 常, 绸, 泉, 脑, 题, 熏,
+Nearest to 烟: 俱, 卷, 凌, 除, 咒, 霰, 焰, 盈,
+Nearest to 看: 填, 问, 惹, 泮, 悄, 翅, 铅, 美,
+Nearest to 去: 你, 限, 槐, 房, 更, 幸, 塔,  ,
+Nearest to 得: 伴, 襟, 牵, 紧, 润, 戟, 时, 续,
+Average loss at step  12000 :  4.552811650276184
+Average loss at step  14000 :  4.4478118531703945
+Average loss at step  16000 :  4.470268190979958
+Average loss at step  18000 :  4.5095338962078095
+Average loss at step  20000 :  4.453767774343491
+Nearest to 云: 阡, 申, 霭, 薪, 岫, 暝, 宗, 豆,
+Nearest to 楼: 嘲, 透, 阁, 娉, 泊, 变, 夏, 蹬,
+Nearest to 歌: 蠲, 拱, 茸, 浊, 纹, 庚, 婵, 反,
+Nearest to 与: 先, 纵,  , 看, 将, 泮, 招, 明,
+Nearest to 多: 无, 县, 理, 居, 砚, 哑, 旅, 样,
+Nearest to 声: 蟾, 早, 辐, 试, 涅, 蹄, 逼, 程,
+Nearest to 南: 西, 湖, 鹊, 北, 咫, 潢, 簪, 绕,
+Nearest to 三: 廷, 裾, 即, 元, 眺, 烬, 妻, 荒,
+Nearest to 人: 也, 指, 殢,  , 唇, 代, 缈, 擎,
+Nearest to 香: 廊, 堕, 焚, 竟, 沼,  , 柳, 衮,
+Nearest to 花: 渡, 暇, 菊, 狼, 、, 砂,  , 储,
+Nearest to 如: 筱, 谊, 常, 俗, 缄, 绸, 亏, 仰,
+Nearest to 烟: 卷, 俱, 焰, 凌, 咒, 盈, 霰, 暗,
+Nearest to 看: 问, 填, 瘼, 区, 悄, 与, 惹, 泮,
+Nearest to 去: 房, 归, 你, 槐, 塔, 殚, 限, 幸,
+Nearest to 得: 戟, 牵, 伴, 雩, 紧, 欠, 续, 襟,
+Average loss at step  22000 :  4.389428388953209
+Average loss at step  24000 :  4.360677062511444
+Average loss at step  26000 :  4.365398821830749
+Average loss at step  28000 :  4.412824316263199
+Average loss at step  30000 :  4.322624325275421
+Nearest to 云: 阡, 霭, 申, 薪, 岫, 豆, 烟, 暝,
+Nearest to 楼: 阁, 蹬, 嘲, 透, 娉, 变, 夏, 霄,
+Nearest to 歌: 蠲, 庚, 纹, 完, 浊, 戴, 掇, 拱,
+Nearest to 与: 先,  , 为, 将, 看, 泮, 纵, 苻,
+Nearest to 多: 无, 县, 理, 哑, 居, 砚, 样, 旅,
+Nearest to 声: 辐, 蟾, 滑, 程, 咽, 试, 逼, 栖,
+Nearest to 南: 西, 北, 湖, 潢, 渡, 鹊, 咫, 裀,
+Nearest to 三: 五, 八, 眺, 元, 荒, 即, 烬, 玑,
+Nearest to 人: 囗, 也, 殢, 代, 腌, 指, 唇, 缈,
+Nearest to 香: 廊, 沼, 焚, 竟, 堕, 衮, 罩, 签,
+Nearest to 花: 渡, 狼, 暇, 菊,  , 砂, 红, 瓮,
+Nearest to 如: 筱, 醮, 亏, 谊, 绸, 似, 泛, 常,
+Nearest to 烟: 卷, 俱, 焰, 霏, 咒, 凌, 霰, 路,
+Nearest to 看: 问, 区, 填, 与, 悄, 跛, 菜, 骏,
+Nearest to 去: 归, 来, 殚, 限, 祷, 迤, 房, 幸,
+Nearest to 得: 欠, 雩, 戟, 堞, 不, 却, 取, 瞥,
+Average loss at step  32000 :  4.167035359859467
+Average loss at step  34000 :  4.2008628306388855
+Average loss at step  36000 :  4.2299754612445835
+Average loss at step  38000 :  4.193919232726097
+Average loss at step  40000 :  4.184618289351463
+Nearest to 云: 阡, 霭, 烟, 岫, 豆, 枢, 薪, 暝,
+Nearest to 楼: 阁, 蹬, 娉, 堂, 霄, 夏, 透, 嘲,
+Nearest to 歌: 蠲, 纹, 唱, 庚, 拱, 完, 掇, 浊,
+Nearest to 与: 为, 先, 苻,  , 看, 将, 把, 骚,
+Nearest to 多: 理, 无, 县, 样, 霖, 哑, 居, 搭,
+Nearest to 声: 辐, 滑, 咽, 程, 葆, 蟾, 栖, 片,
+Nearest to 南: 西, 北, 湖, 鹊, 渡, 潢, 绕, 裀,
+Nearest to 三: 五, 八, 眺, 荒, 玑, 烬, 廷, 四,
+Nearest to 人: 囗, 也, 腌, 代, 唇, 呵, 醿, 偿,
+Nearest to 香: 沼, 廊, 焚, 竟, 堕, 签, 衮, 罩,
+Nearest to 花: 菊, 暇, 渡,  , 狼, 红, 瓮, 砂,
+Nearest to 如: 似, 筱, 醮, 亏, 谊, 绸, 鴂, 铛,
+Nearest to 烟: 卷, 雾, 俱, 云, 焰, 霏, 咒, 霰,
+Nearest to 看: 问, 区, 填, 与, 跛, 菜, 骏, 悄,
+Nearest to 去: 归, 来, 殚, 祷, 忌, 限, 迤, 房,
+Nearest to 得: 取, 有, 欠, 雩, 却, 杀, 伴, 牵,
+Average loss at step  42000 :  4.207795816063881
+Average loss at step  44000 :  4.202114500164986
+Average loss at step  46000 :  4.240463381528854
+Average loss at step  48000 :  4.281320370078086
+Average loss at step  50000 :  4.257107369422912
+Nearest to 云: 阡, 霭, 岫, 豆, 烟, 雾, 枢, 薪,
+Nearest to 楼: 阁, 蹬, 夏, 娉, 堂, 霄, 陌, 锷,
+Nearest to 歌: 蠲, 唱, 庚, 箫, 掇, 完, 枕, 纹,
+Nearest to 与: 为, 看,  , 把, 将, 对, 先, 苻,
+Nearest to 多: 理, 无, 县, 霖, 样, 搭, 绪, 哑,
+Nearest to 声: 辐, 滑, 咽, 栖, 葆, 程, 鼓, 蜗,
+Nearest to 南: 西, 北, 湖, 潢, 渡, 绕, 裀, 冉,
+Nearest to 三: 五, 八, 眺, 七, 荒, 四, 即, 两,
+Nearest to 人: 囗, 腌, 代, 怆, 喈, 也, 魁, 唇,
+Nearest to 香: 焚, 沼, 窠, 堕, 竟, 廊, 罩, 签,
+Nearest to 花: 暇, 、, 渡, 菊, 红, 枝, 狼, 瓮,
+Nearest to 如: 似, 筱, 醮, 亏, 谊, 铛, 仰, 隙,
+Nearest to 烟: 雾, 卷, 霏, 焰, 云, 俱, 暗, 霰,
+Nearest to 看: 问, 区, 与, 跛, 填, 将, 骏, 悄,
+Nearest to 去: 归, 来, 殚, 到, 忌, 祷, 迤, 焉,
+Nearest to 得: 取, 欠, 雩, 戟, 逊, }, 堞, 杀,
+Average loss at step  52000 :  4.242293161392212
+Average loss at step  54000 :  4.195250991463661
+Average loss at step  56000 :  4.236363737225533
+Average loss at step  58000 :  4.252040003180504
+Average loss at step  60000 :  4.180931038856507
+Nearest to 云: 阡, 霭, 岫, 豆, 烟, 雾, 申, 天,
+Nearest to 楼: 蹬, 阁, 夏, 霄, 娉, 堂, 拭, 锷,
+Nearest to 歌: 唱, 掇, 箫, 蠲, 庚, 纹, 枕, 完,
+Nearest to 与: 为, 将, 看,  , 借, 苻, 把, 先,
+Nearest to 多: 理, 县, 绪, 霖, 无, 样, 哑, 搭,
+Nearest to 声: 辐, 滑, 咽, 鼓, 片, 栖, 葆, 程,
+Nearest to 南: 西, 北, 湖, 渡, 潢, 冉, 裀, 绕,
+Nearest to 三: 五, 八, 四, 眺, 一, 七, 两, 荒,
+Nearest to 人: 囗, 腌, 蹭, 喈, 旁, 伪, 代, 怆,
+Nearest to 香: 焚, 沼, 窠, 竟, 罩, 衮, 签, 廊,
+Nearest to 花: 狼, 渡, 菊, 暇, 瓮, 红, 芳, 早,
+Nearest to 如: 似, 醮, 亏, 筱, 隙, 铛, 为, 泊,
+Nearest to 烟: 雾, 焰, 云, 卷, 俱, 霏, 霰, 扑,
+Nearest to 看: 问, 区, 跛, 与, 将, 填, 菜, 骏,
+Nearest to 去: 归, 来, 殚, 到, 忌, 祷, 迤, 还,
+Nearest to 得: 取, 欠, 雩, 杀, 却, 虺, 有, 堞,
+Average loss at step  62000 :  4.100400009512901
+Average loss at step  64000 :  4.1116251480579376
+Average loss at step  66000 :  4.13108950150013
+Average loss at step  68000 :  4.107930138945579
+Average loss at step  70000 :  4.109158636629582
+Nearest to 云: 霭, 阡, 岫, 烟, 豆, 雾, 枢, 幔,
+Nearest to 楼: 阁, 蹬, 堂, 陌, 拭, 霄, 娉, 夏,
+Nearest to 歌: 唱, 箫, 掇, 蠲, 纹, 完, 庚, 鸂,
+Nearest to 与: 为, 苻, 著, 借, 看, 将, 把, 先,
+Nearest to 多: 理, 霖, 绪, 样, 县, 搭, 无, 咎,
+Nearest to 声: 辐, 滑, 咽, 片, 鼓, 姝, 栖, 葆,
+Nearest to 南: 西, 北, 湖, 绕, 渡, 潢, 裀, 冉,
+Nearest to 三: 五, 八, 四, 眺, 荒, 两, 七, 十,
+Nearest to 人: 囗, 腌, 喈, 代, 唇, 怆, 反, 自,
+Nearest to 香: 焚, 沼, 窠, 罩, 廊, 竟, 签, 酡,
+Nearest to 花: 菊, 暇, 瓮, 渡, 红, 狼, 雪, 羯,
+Nearest to 如: 似, 醮, 筱, 亏, 铛, 8, 隙, 胚,
+Nearest to 烟: 雾, 焰, 云, 卷, 霏, 俱, 扑, 暗,
+Nearest to 看: 问, 跛, 区, 与, 把, 见, 骏, 菜,
+Nearest to 去: 归, 来, 到, 殚, 忌, 祷, 还, 焉,
+Nearest to 得: 取, 欠, 杀, 雩, 虺, 有, 却, 逊,
+Average loss at step  72000 :  4.124439235806465
+Average loss at step  74000 :  4.124671194434166
+Average loss at step  76000 :  4.19160466003418
+Average loss at step  78000 :  4.198525421500206
+Average loss at step  80000 :  4.190291954159736
+Nearest to 云: 霭, 阡, 岫, 豆, 雾, 烟, 枢, 幔,
+Nearest to 楼: 阁, 蹬, 夏, 堂, 陌, 娉, 拭, 霄,
+Nearest to 歌: 唱, 箫, 掇, 蠲, 邀, 庚, 完, 鞭,
+Nearest to 与: 为, 著, 看, 借, 把, 苻, 将, 先,
+Nearest to 多: 理, 霖, 绪, 县, 搭, 样, 哑, 咎,
+Nearest to 声: 辐, 滑, 咽, 鼓, 鸣, 片, 栖, 语,
+Nearest to 南: 西, 北, 湖, 潢, 冉, 晚, 绕, 裀,
+Nearest to 三: 五, 八, 两, 四, 十, 七, 眺, 荒,
+Nearest to 人: 囗, 腌, 喈, 怆, 代, 世, 旁, 蛑,
+Nearest to 香: 焚, 窠, 酡, 沼, 芳, 春, 竟, 熏,
+Nearest to 花: 菊, 暇, 、, 渡, 枝, 羯, 瓮, 红,
+Nearest to 如: 似, 醮, 筱, 亏, 铛, 8, 隙, 胚,
+Nearest to 烟: 雾, 云, 焰, 卷, 霏, 俱, 暗, 路,
+Nearest to 看: 问, 跛, 区, 与, 把, 做, 见, 将,
+Nearest to 去: 归, 来, 到, 殚, 忌, 还, 焉, 肪,
+Nearest to 得: 取, 欠, 雩, 虺, 杀, }, 逊, 却,
+Average loss at step  82000 :  4.168645306944847
+Average loss at step  84000 :  4.140433663368225
+Average loss at step  86000 :  4.184061477780342
+Average loss at step  88000 :  4.178337517738342
+Average loss at step  90000 :  4.09675839805603
+Nearest to 云: 霭, 岫, 阡, 雾, 豆, 烟, 霞, 天,
+Nearest to 楼: 蹬, 阁, 夏, 堂, 拭, 霄, 陌, 榭,
+Nearest to 歌: 唱, 掇, 箫, 鸂, 邀, 揖, 完, 蠲,
+Nearest to 与: 为, 著, 借, 似, 看, 将, 苻, 把,
+Nearest to 多: 绪, 理, 霖, 何, 哑, 县, 搭, 样,
+Nearest to 声: 辐, 咽, 滑, 鼓, 鸣, 片, 栖, 姝,
+Nearest to 南: 西, 北, 湖, 晚, 雉, 潢, 渡, 冉,
+Nearest to 三: 五, 八, 四, 十, 两, 七, 一, 二,
+Nearest to 人: 囗, 喈, 旁, 腌, 伪, 怆, 自, 蹭,
+Nearest to 香: 窠, 焚, 芳, 熏, 沼, 罩, 酡, 春,
+Nearest to 花: 菊, 渡, 早, 瓮, 暇, 羯, 狼, 芳,
+Nearest to 如: 似, 亏, 醮, 为, 筱, 隙, 铛, 于,
+Nearest to 烟: 雾, 焰, 云, 霏, 俱, 卷, 扑, 臂,
+Nearest to 看: 问, 区, 跛, 把, 与, 见, 彰, 将,
+Nearest to 去: 归, 来, 到, 殚, 还, 忌, 何, 肪,
+Nearest to 得: 取, 欠, 杀, 虺, 却, 雩, 遣, 能,
+Average loss at step  92000 :  4.047688825845718
+Average loss at step  94000 :  4.087478435754776
+Average loss at step  96000 :  4.053613486886024
+Average loss at step  98000 :  4.080614943027497
+Average loss at step  100000 :  4.058125738859177
+Nearest to 云: 霭, 烟, 岫, 雾, 阡, 豆, 幔, 枢,
+Nearest to 楼: 阁, 堂, 陌, 蹬, 拭, 夏, 榭, 霄,
+Nearest to 歌: 唱, 箫, 舞, 鸂, 掇, 揖, 蒋, 邀,
+Nearest to 与: 为, 著, 苻, 借, 似, 向, 看, 将,
+Nearest to 多: 霖, 绪, 理, 样, 搭, 咎, 哑, 何,
+Nearest to 声: 辐, 滑, 咽, 姝, 鸣, 语, 片, 鼓,
+Nearest to 南: 西, 北, 湖, 晚, 绕, 冉, 斜, 楚,
+Nearest to 三: 五, 八, 四, 两, 荒, 十, 七, 眺,
+Nearest to 人: 囗, 腌, 喈, 客, 反, 自, 我, 蛑,
+Nearest to 香: 熏, 窠, 焚, 酡, 罩, 沼, 签, 屯,
+Nearest to 花: 菊, 暇, 瓮, 羯, 雪, 渡, 早, 狼,
+Nearest to 如: 似, 醮, 筱, 隙, 亏, 铛, 胚, 抗,
+Nearest to 烟: 雾, 云, 焰, 霏, 俱, 暗, 卷, 臂,
+Nearest to 看: 跛, 问, 区, 把, 与, 见, 做, 买,
+Nearest to 去: 归, 来, 到, 忌, 殚, 还, 焉, 肪,
+Nearest to 得: 取, 杀, 欠, 虺, 著, 却, 雩, 有,
+Average loss at step  102000 :  4.082304442286492
+Average loss at step  104000 :  4.0948603900671
+Average loss at step  106000 :  4.145520990133286
+Average loss at step  108000 :  4.146639078974724
+Average loss at step  110000 :  4.169153466939926
+Nearest to 云: 霭, 雾, 岫, 豆, 阡, 烟, 幔, 眯,
+Nearest to 楼: 阁, 蹬, 堂, 陌, 榭, 梅, 夏, 拭,
+Nearest to 歌: 唱, 箫, 舞, 掇, 邀, 蠲, 鸂, 髻,
+Nearest to 与: 为, 借, 著, 苻, 看, 向, 似, 把,
+Nearest to 多: 霖, 绪, 理, 搭, 咎, 县, 何, 偏,
+Nearest to 声: 辐, 滑, 咽, 鸣, 姝, 语, 鼓, 栖,
+Nearest to 南: 西, 北, 湖, 晚, 砾, 冉, 雉, 卦,
+Nearest to 三: 五, 八, 两, 十, 四, 七, 荒, 眺,
+Nearest to 人: 囗, 喈, 腌, 客, 怆, 旁, 自, 魁,
+Nearest to 香: 窠, 熏, 焚, 酡, 芳, 篽, 辋, 春,
+Nearest to 花: 、, 菊, 渡, 羯, 枝, 暇, 夺, 芳,
+Nearest to 如: 似, 醮, 抗, 为, 隙, 亏, 筱, 于,
+Nearest to 烟: 雾, 焰, 云, 俱, 霏, 卷, 暗, 薜,
+Nearest to 看: 跛, 问, 区, 把, 与, 听, 做, 见,
+Nearest to 去: 归, 来, 到, 还, 程, 殚, 忌, 肪,
+Nearest to 得: 取, 虺, 雩, 欠, 杀, }, 却, 著,
+Average loss at step  112000 :  4.114585240721703
+Average loss at step  114000 :  4.107790948629379
+Average loss at step  116000 :  4.150351980090141
+Average loss at step  118000 :  4.136518673419952
+Average loss at step  120000 :  4.0309616779088975
+Nearest to 云: 霭, 岫, 雾, 豆, 阡, 霞, 烟, 幔,
+Nearest to 楼: 阁, 堂, 蹬, 榭, 夏, 拭, 霄, 梅,
+Nearest to 歌: 唱, 箫, 掇, 舞, 鸂, 揖, 操, 邀,
+Nearest to 与: 为, 借, 著, 向, 似, 苻, 教, 将,
+Nearest to 多: 霖, 何, 绪, 理, 偏, 咎, 年, 搭,
+Nearest to 声: 辐, 鸣, 咽, 滑, 姝, 鼓, 语, 邻,
+Nearest to 南: 西, 北, 晚, 湖, 雉, 衍, 黜, 砾,
+Nearest to 三: 五, 八, 四, 十, 两, 七, 二, 荒,
+Nearest to 人: 自, 囗, 喈, 腌, 怆, 。, 蹭, 伪,
+Nearest to 香: 窠, 熏, 芳, 焚, 酡, 罩, 春, 篽,
+Nearest to 花: 。, 早, 菊, 渡, 瓮, 羯, 芳, 暇,
+Nearest to 如: 似, 为, 亏, 醮, 于, 隙, 抗, 筱,
+Nearest to 烟: 雾, 焰, 云, 俱, 霏, 臂, 暗, 风,
+Nearest to 看: 跛, 问, 区, 把, 见, 听, 与, 彰,
+Nearest to 去: 归, 来, 到, 殚, 还, 何, 程, 肪,
+Nearest to 得: 取, 杀, 却, 虺, 欠, 能, 遣, 著,
+Average loss at step  122000 :  4.034103193759918
+Average loss at step  124000 :  4.058468486428261
+Average loss at step  126000 :  4.006403437256813
+Average loss at step  128000 :  4.042789306998253
+Average loss at step  130000 :  4.040659806936979
+Nearest to 云: 霭, 雾, 岫, 阡, 豆, 幔, 烟, 枢,
+Nearest to 楼: 阁, 堂, 榭, 蹬, 陌, 拭, 霄, 城,
+Nearest to 歌: 唱, 箫, 舞, 鸂, 揖, 操, 掇, 蒋,
+Nearest to 与: 为, 著, 苻, 借, 向, 似, 教, 将,
+Nearest to 多: 霖, 绪, 理, 咎, 何, 搭, 偏, 样,
+Nearest to 声: 辐, 鸣, 咽, 滑, 姝, 语, 闻, 邻,
+Nearest to 南: 西, 北, 晚, 湖, 斜, 黜, 雉, 绕,
+Nearest to 三: 五, 八, 四, 两, 七, 十, 荒, 二,
+Nearest to 人: 客, 反, 喈, 囗, 蛑, 我, 自, 怆,
+Nearest to 香: 熏, 窠, 酡, 篽, 焚, 辋, 罩, 馥,
+Nearest to 花: 菊, 羯, 瓮, 暇, 雪, 早, 讯, 芳,
+Nearest to 如: 似, 隙, 醮, 抗, 胚, 于, 筱, 於,
+Nearest to 烟: 雾, 焰, 云, 芗, 俱, 臂, 霰, 霏,
+Nearest to 看: 跛, 问, 区, 把, 听, 见, 与, 买,
+Nearest to 去: 归, 来, 到, 忌, 还, 殚, 程, 肪,
+Nearest to 得: 取, 著, 虺, 杀, 欠, 却, 能, 雩,
+Average loss at step  132000 :  4.04008910381794
+Average loss at step  134000 :  4.067433776021003
+Average loss at step  136000 :  4.118575612425804
+Average loss at step  138000 :  4.108944832205772
+Average loss at step  140000 :  4.136344031095505
+Nearest to 云: 雾, 霭, 岫, 豆, 阡, 烟, 幔, 眯,
+Nearest to 楼: 阁, 榭, 堂, 蹬, 梅, 阑, 陌, 拭,
+Nearest to 歌: 唱, 箫, 舞, 掇, 邀, 髻, 鸂, 揖,
+Nearest to 与: 为, 借, 向, 著, 似, 苻, 倩, 看,
+Nearest to 多: 霖, 绪, 咎, 偏, 何, 理, 年, 毕,
+Nearest to 声: 鸣, 辐, 咽, 滑, 姝, 语, 闻, 听,
+Nearest to 南: 西, 北, 晚, 斜, 雉, 黜, 衍, 砾,
+Nearest to 三: 五, 八, 两, 四, 七, 十, 二, 荒,
+Nearest to 人: 客, 囗, 喈, 腌, 怆, 蛑, 旁, 我,
+Nearest to 香: 熏, 窠, 酡, 焚, 芳, 篽, 辋, 春,
+Nearest to 花: 、, 早, 菊, 夺, 枝, 羯, 芳, 暇,
+Nearest to 如: 似, 抗, 醮, 为, 于, 隙, 亏, 於,
+Nearest to 烟: 雾, 焰, 云, 俱, 薜, 溯, 芗, 荫,
+Nearest to 看: 跛, 听, 问, 区, 把, 与, 见, 做,
+Nearest to 去: 归, 来, 到, 还, 程, 殚, 肪, 忌,
+Nearest to 得: 取, 虺, 著, 雩, 杀, 能, 却, 欠,
+Average loss at step  142000 :  4.0951087845563885
+Average loss at step  144000 :  4.073265159010887
+Average loss at step  146000 :  4.129299559593201
+Average loss at step  148000 :  4.105394130945205
+Average loss at step  150000 :  3.9932440851926803
+Nearest to 云: 霭, 岫, 雾, 霞, 豆, 幔, 阡, 天,
+Nearest to 楼: 堂, 阁, 榭, 梅, 城, 阑, 蹬, 夏,
+Nearest to 歌: 唱, 箫, 舞, 掇, 鸂, 揖, 操, 邀,
+Nearest to 与: 为, 向, 借, 似, 著, 苻, 倩, 教,
+Nearest to 多: 霖, 何, 绪, 偏, 咎, 年, 人, 理,
+Nearest to 声: 鸣, 辐, 咽, 滑, 闻, 姝, 语, 邻,
+Nearest to 南: 西, 北, 晚, 雉, 黜, 斜, 湖, 蒲,
+Nearest to 三: 五, 八, 十, 四, 两, 二, 七, 一,
+Nearest to 人: 自, 腌, 旁, 怆, 蹭, 喈, 客, 伪,
+Nearest to 香: 熏, 窠, 芳, 酡, 焚, 花, 春, 篽,
+Nearest to 花: 早, 芳, 羯, 粉, 菊, 蝶, 渡, 瓮,
+Nearest to 如: 似, 于, 为, 隙, 抗, 亏, 醮, 菜,
+Nearest to 烟: 雾, 焰, 云, 俱, 荫, 霭, 翠, 臂,
+Nearest to 看: 跛, 听, 问, 把, 区, 见, 彰, 买,
+Nearest to 去: 归, 来, 到, 还, 殚, 程, 肪, 何,
+Nearest to 得: 取, 著, 虺, 却, 能, 杀, 遣, 雩,
+Average loss at step  152000 :  4.011782033085823
+Average loss at step  154000 :  4.040368242621422
+Average loss at step  156000 :  3.9834063457250597
+Average loss at step  158000 :  4.023987292051316
+Average loss at step  160000 :  4.025737141370773
+Nearest to 云: 霭, 雾, 岫, 幔, 豆, 阡, 烟, 枢,
+Nearest to 楼: 阁, 榭, 堂, 城, 拭, 蹬, 陌, 阑,
+Nearest to 歌: 唱, 箫, 舞, 操, 揖, 鸂, 掇, 词,
+Nearest to 与: 为, 向, 苻, 借, 著, 似, 教, 将,
+Nearest to 多: 霖, 绪, 咎, 何, 理, 闲, 偏, 搭,
+Nearest to 声: 鸣, 辐, 咽, 姝, 闻, 滑, 听, 语,
+Nearest to 南: 西, 北, 斜, 晚, 黜, 东, 雉, 蒲,
+Nearest to 三: 五, 八, 四, 两, 十, 七, 二, 荒,
+Nearest to 人: 客, 我, 自, 反, 怆, 蛑, 囗, 腌,
+Nearest to 香: 熏, 窠, 酡, 篽, 辋, 馥, 芳, 焚,
+Nearest to 花: 菊, 羯, 芳, 瓮, 雪, 暇, 早, 渡,
+Nearest to 如: 似, 醮, 于, 抗, 隙, 胚, 於, 筱,
+Nearest to 烟: 雾, 焰, 云, 芗, 霭, 荫, 翠, 臂,
+Nearest to 看: 跛, 听, 见, 问, 把, 区, 买, 做,
+Nearest to 去: 归, 来, 到, 便, 还, 殚, 忌, 程,
+Nearest to 得: 取, 著, 虺, 能, 杀, 遣, 却, 欠,
+Average loss at step  162000 :  4.012345963597298
+Average loss at step  164000 :  4.052496787786484
+Average loss at step  166000 :  4.081255184054375
+Average loss at step  168000 :  4.08185136282444
+Average loss at step  170000 :  4.104306138753891
+Nearest to 云: 岫, 雾, 霭, 眯, 幔, 豆, 烟, 阡,
+Nearest to 楼: 阁, 榭, 堂, 梅, 阑, 蹬, 城, 拭,
+Nearest to 歌: 唱, 箫, 舞, 掇, 邀, 揖, 操, 吟,
+Nearest to 与: 为, 向, 借, 倩, 似, 著, 苻, 将,
+Nearest to 多: 霖, 咎, 绪, 偏, 何, 年, 诀, 毕,
+Nearest to 声: 鸣, 辐, 咽, 滑, 闻, 语, 姝, 听,
+Nearest to 南: 西, 北, 黜, 砾, 晚, 斜, 东, 衍,
+Nearest to 三: 五, 八, 两, 四, 七, 十, 二, 蛛,
+Nearest to 人: 客, 喈, 囗, 春, 梅, 腌, 我, 蛑,
+Nearest to 香: 熏, 窠, 酡, 芳, 焚, 肤, 辋, 篽,
+Nearest to 花: 早, 、, 菊, 羯, 芳, 粉, 枝, 糁,
+Nearest to 如: 似, 抗, 于, 为, 醮, 菜, 隙, 於,
+Nearest to 烟: 雾, 焰, 云, 薜, 俱, 霁, 霭, 荫,
+Nearest to 看: 听, 跛, 见, 问, 把, 区, 与, 做,
+Nearest to 去: 归, 来, 到, 程, 肪, 还, 殚, 忌,
+Nearest to 得: 取, 虺, 著, 能, 却, 杀, 雩, 遣,
+Average loss at step  172000 :  4.086311111927032
+Average loss at step  174000 :  4.048108445763588
+Average loss at step  176000 :  4.106562994718551
+Average loss at step  178000 :  4.085193009972572
+Average loss at step  180000 :  3.9504720486402514
+Nearest to 云: 霭, 岫, 雾, 幔, 霞, 烟, 阡, 天,
+Nearest to 楼: 榭, 阁, 堂, 梅, 城, 阑, 蹬, 拭,
+Nearest to 歌: 唱, 箫, 舞, 掇, 揖, 鸂, 操, 词,
+Nearest to 与: 为, 向, 似, 借, 倩, 苻, 教, 著,
+Nearest to 多: 霖, 何, 咎, 绪, 人, 偏, 甚, 年,
+Nearest to 声: 鸣, 辐, 咽, 闻, 滑, 语, 姝, 音,
+Nearest to 南: 西, 北, 晚, 头, 黜, 蒲, 雉, 东,
+Nearest to 三: 五, 八, 四, 十, 二, 七, 两, 一,
+Nearest to 人: 我, 多, 客, 腌, 自, 梅, 应, 囗,
+Nearest to 香: 熏, 窠, 芳, 酡, 焚, 春, 辋, 花,
+Nearest to 花: 早, 芳, 粉, 羯, 柳, 菊, 、, 瓮,
+Nearest to 如: 似, 于, 为, 抗, 菜, 隙, 於, 亏,
+Nearest to 烟: 雾, 焰, 荫, 云, 霭, 翠, 风, 俱,
+Nearest to 看: 跛, 听, 见, 问, 把, 区, 彰, 觅,
+Nearest to 去: 归, 来, 到, 何, 还, 殚, 肪, 晚,
+Nearest to 得: 取, 著, 却, 能, 虺, 杀, 了, 遣,
+Average loss at step  182000 :  4.0048046882152555
+Average loss at step  184000 :  4.020708317160606
+Average loss at step  186000 :  3.9601774533987046
+Average loss at step  188000 :  4.002819930076599
+Average loss at step  190000 :  4.005939328640699
+Nearest to 云: 霭, 雾, 岫, 幔, 烟, 丑, 豆, 阡,
+Nearest to 楼: 榭, 阁, 堂, 城, 拭, 蹬, 阑, 梅,
+Nearest to 歌: 唱, 箫, 舞, 操, 揖, 鸂, 掇, 吟,
+Nearest to 与: 为, 向, 似, 借, 苻, 著, 倩, 教,
+Nearest to 多: 霖, 咎, 绪, 何, 偏, 搭, 诀, 闲,
+Nearest to 声: 鸣, 辐, 闻, 咽, 姝, 滑, 听, 语,
+Nearest to 南: 西, 北, 东, 黜, 蒲, 斜, 晚, 雉,
+Nearest to 三: 五, 八, 四, 十, 两, 七, 二, 蛛,
+Nearest to 人: 客, 我, 梅, 囗, 完, 怆, 反, 蛑,
+Nearest to 香: 熏, 窠, 酡, 馥, 辋, 芳, 篽, 润,
+Nearest to 花: 羯, 菊, 芳, 早, 粉, 渡, 雪, 蘼,
+Nearest to 如: 似, 于, 抗, 於, 醮, 隙, 胚, 菜,
+Nearest to 烟: 雾, 焰, 云, 荫, 霭, 芗, 薜, 翠,
+Nearest to 看: 跛, 听, 见, 问, 做, 把, 区, 买,
+Nearest to 去: 归, 来, 到, 便, 还, 诏, 趁, 肪,
+Nearest to 得: 取, 著, 虺, 能, 却, 了, 杀, 嗔,
+Average loss at step  192000 :  4.000950882196427
+Average loss at step  194000 :  4.0215242646932605
+Average loss at step  196000 :  4.069583696603775
+Average loss at step  198000 :  4.0655758203268055
+Average loss at step  200000 :  4.08664376270771
+Nearest to 云: 雾, 岫, 霭, 眯, 幔, 烟, 丑, 霞,
+Nearest to 楼: 榭, 阁, 堂, 梅, 阑, 城, 蹬, 躔,
+Nearest to 歌: 唱, 舞, 箫, 揖, 掇, 操, 邀, 蠲,
+Nearest to 与: 为, 倩, 借, 向, 似, 苻, 将, 被,
+Nearest to 多: 霖, 咎, 绪, 何, 偏, 诀, 甚, 恼,
+Nearest to 声: 鸣, 辐, 咽, 闻, 语, 姝, 滑, 听,
+Nearest to 南: 西, 北, 黜, 蒲, 东, 砾, 头, 斜,
+Nearest to 三: 五, 两, 四, 十, 八, 七, 二, 仅,
+Nearest to 人: 客, 春, 旅, 喈, 囗, 梅, 腌, 蛑,
+Nearest to 香: 熏, 窠, 芳, 酡, 肤, 辋, 焚, 馥,
+Nearest to 花: 芳, 早, 、, 羯, 粉, 菊, 枝, 塔,
+Nearest to 如: 似, 抗, 于, 醮, 为, 菜, 於, 胚,
+Nearest to 烟: 雾, 焰, 云, 薜, 霭, 翠, 荫, 俱,
+Nearest to 看: 听, 跛, 见, 问, 做, 任, 彰, 把,
+Nearest to 去: 归, 来, 到, 程, 肪, 殚, 杳, 晚,
+Nearest to 得: 取, 著, 能, 虺, 却, 了, 遣, 雩,
+Average loss at step  202000 :  4.061324174761772
+Average loss at step  204000 :  4.03540640437603
+Average loss at step  206000 :  4.088458660483361
+Average loss at step  208000 :  4.0598549605607985
+Average loss at step  210000 :  3.9283413821458817
+Nearest to 云: 霭, 雾, 岫, 幔, 霞, 眯, 烟, 天,
+Nearest to 楼: 榭, 堂, 阁, 梅, 城, 阑, 蹬, 拭,
+Nearest to 歌: 唱, 箫, 舞, 揖, 掇, 操, 鸂, 词,
+Nearest to 与: 为, 向, 借, 似, 倩, 被, 教, 苻,
+Nearest to 多: 霖, 何, 咎, 绪, 偏, 甚, 人, 髫,
+Nearest to 声: 鸣, 辐, 闻, 咽, 音, 语, 听, 姝,
+Nearest to 南: 西, 北, 黜, 蒲, 雉, 头, 东, 衍,
+Nearest to 三: 五, 八, 十, 四, 二, 七, 两, 蛛,
+Nearest to 人: 我, 客, 腌, 多, 梅, 蛑, 自, 应,
+Nearest to 香: 熏, 芳, 窠, 酡, 辋, 馥, 胪, 襜,
+Nearest to 花: 早, 芳, 粉, 羯, 菊, 柳, 春, 雪,
+Nearest to 如: 似, 。, 抗, 于, 於, 为, 菜, 亏,
+Nearest to 烟: 雾, 焰, 荫, 云, 霭, 翠, 薜, 苒,
+Nearest to 看: 听, 跛, 见, 问, 把, 区, 彰, 觅,
+Nearest to 去: 归, 来, 到, 趁, 肪, 还, 便, 程,
+Nearest to 得: 取, 著, 了, 能, 虺, 却, 遣, 杀,
+Average loss at step  212000 :  3.9858811489343644
+Average loss at step  214000 :  4.000092854738235
+Average loss at step  216000 :  3.953506418466568
+Average loss at step  218000 :  3.9686876720786093
+Average loss at step  220000 :  4.008188583374023
+Nearest to 云: 霭, 雾, 幔, 岫, 烟, 眯, 霞, 丑,
+Nearest to 楼: 城, 榭, 阁, 堂, 梅, 阑, 拭, 蹬,
+Nearest to 歌: 唱, 箫, 操, 舞, 揖, 掇, 鸂, 吟,
+Nearest to 与: 为, 向, 借, 似, 倩, 苻, 被, 将,
+Nearest to 多: 霖, 咎, 何, 绪, 偏, 闲, 饾, 搭,
+Nearest to 声: 鸣, 闻, 辐, 咽, 听, 姝, 响, 滑,
+Nearest to 南: 西, 北, 黜, 东, 斜, 雉, 蒲, 绕,
+Nearest to 三: 五, 八, 四, 十, 两, 七, 二, 蛛,
+Nearest to 人: 客, 我, 蛑, 囗, 反, 完, 梅, 腌,
+Nearest to 香: 熏, 窠, 馥, 酡, 辋, 芳, 篽, 润,
+Nearest to 花: 羯, 早, 芳, 菊, 粉, 柳, 红, 蘼,
+Nearest to 如: 似, 抗, 於, 于, 醮, 隙, 胚, 菜,
+Nearest to 烟: 雾, 焰, 云, 霭, 荫, 芗, 薜, 苒,
+Nearest to 看: 跛, 听, 见, 问, 觅, 起, 做, 把,
+Nearest to 去: 归, 来, 到, 趁, 便, 还, 诏, 肪,
+Nearest to 得: 取, 著, 虺, 能, 了, 遣, 却, 杀,
+Average loss at step  222000 :  3.988302207708359
+Average loss at step  224000 :  4.010170706391334
+Average loss at step  226000 :  4.076024723052979
+Average loss at step  228000 :  4.049425132989883
+Average loss at step  230000 :  4.061178979754448
+Nearest to 云: 雾, 霭, 岫, 幔, 眯, 霞, 烟, 丑,
+Nearest to 楼: 榭, 阁, 堂, 城, 梅, 阑, 躔, 蹬,
+Nearest to 歌: 唱, 舞, 箫, 揖, 掇, 操, 洋, 邀,
+Nearest to 与: 为, 倩, 借, 向, 似, 将, 苻, 被,
+Nearest to 多: 霖, 咎, 何, 绪, 偏, 诀, 饾, 甚,
+Nearest to 声: 鸣, 闻, 辐, 咽, 响, 姝, 语, 音,
+Nearest to 南: 西, 北, 蒲, 黜, 头, 斜, 东, 横,
+Nearest to 三: 五, 十, 两, 八, 四, 七, 二, 六,
+Nearest to 人: 客, 腌, 梅, 囗, 谁, 斯, 我, 旅,
+Nearest to 香: 熏, 窠, 芳, 酡, 肤, 馥, 辋, 花,
+Nearest to 花: 芳, 早, 、, 粉, 糁, 枝, 红, 菊,
+Nearest to 如: 似, 抗, 于, 为, 醮, 於, 菜, 体,
+Nearest to 烟: 雾, 焰, 霭, 云, 薜, 荫, 苒, 翠,
+Nearest to 看: 听, 跛, 任, 见, 问, 做, 把, 彰,
+Nearest to 去: 归, 来, 到, 趁, 肪, 便, 诏, 程,
+Nearest to 得: 取, 著, 了, 虺, 能, 却, 遣, 嗔,
+Average loss at step  232000 :  4.040368701338768
+Average loss at step  234000 :  4.020228961825371
+Average loss at step  236000 :  4.067922959566117
+Average loss at step  238000 :  4.040445276856422
+Average loss at step  240000 :  3.921500694155693
+Nearest to 云: 霭, 雾, 幔, 岫, 霞, 烟, 天, 眯,
+Nearest to 楼: 城, 阁, 梅, 榭, 堂, 阑, 栏, 垆,
+Nearest to 歌: 唱, 箫, 掇, 舞, 揖, 操, 父, 词,
+Nearest to 与: 为, 向, 似, 借, 倩, 被, 教, 苻,
+Nearest to 多: 霖, 何, 咎, 人, 绪, 偏, 髫, 甚,
+Nearest to 声: 鸣, 闻, 语, 辐, 咽, 音, 响, 听,
+Nearest to 南: 西, 北, 黜, 雉, 蒲, 岱, 东, 头,
+Nearest to 三: 五, 十, 二, 四, 八, 七, 两, 六,
+Nearest to 人: 多, 我, 梅, 客, 腌, 伪, 应, 曾,
+Nearest to 香: 熏, 窠, 芳, 酡, 馥, 花, 辋, 篽,
+Nearest to 花: 芳, 早, 粉, 春, 菊, 柳, 羯, 雪,
+Nearest to 如: 似, 抗, 於, 为, 于, 。, 菜, 醮,
+Nearest to 烟: 雾, 焰, 霭, 翠, 荫, 云, 苒, 薜,
+Nearest to 看: 听, 跛, 见, 问, 觅, 任, 把, 起,
+Nearest to 去: 归, 来, 到, 趁, 肪, 便, 还, 逐,
+Nearest to 得: 取, 著, 了, 能, 虺, 遣, 却, 杀,
+Average loss at step  242000 :  3.9662138880491256
+Average loss at step  244000 :  3.9915301687717437
+Average loss at step  246000 :  3.949211010336876
+Average loss at step  248000 :  3.9580770508348944
+Average loss at step  250000 :  3.9794971994161608
+Nearest to 云: 霭, 雾, 幔, 烟, 岫, 霞, 眯, 丑,
+Nearest to 楼: 城, 榭, 阁, 堂, 梅, 阑, 栏, 拭,
+Nearest to 歌: 唱, 箫, 舞, 操, 揖, 词, 父, 掇,
+Nearest to 与: 为, 向, 借, 似, 倩, 苻, 将, 被,
+Nearest to 多: 霖, 咎, 绪, 何, 饾, 偏, 恼, 诀,
+Nearest to 声: 鸣, 闻, 响, 辐, 咽, 姝, 听, 语,
+Nearest to 南: 西, 北, 黜, 蒲, 斜, 东, 雉, 绕,
+Nearest to 三: 五, 十, 八, 四, 二, 七, 两, 仅,
+Nearest to 人: 客, 梅, 我, 蛑, 。, 完, 囗, 腌,
+Nearest to 香: 熏, 窠, 馥, 芳, 酡, 辋, 润, 篽,
+Nearest to 花: 芳, 早, 羯, 菊, 红, 春, 粉, 柳,
+Nearest to 如: 似, 於, 胚, 抗, 醮, 于, 而, 菜,
+Nearest to 烟: 雾, 焰, 霭, 云, 荫, 翠, 苒, 薜,
+Nearest to 看: 跛, 听, 见, 问, 觅, 做, 起, 把,
+Nearest to 去: 归, 来, 趁, 到, 便, 逐, 还, 肪,
+Nearest to 得: 取, 著, 能, 了, 虺, 遣, 却, 住,
+Average loss at step  252000 :  3.9816376041173935
+Average loss at step  254000 :  4.024584888339042
+Average loss at step  256000 :  4.052179766535759
+Average loss at step  258000 :  4.038036470651627
+Average loss at step  260000 :  4.045606060147286
+Nearest to 云: 雾, 霭, 岫, 眯, 幔, 霞, 丑, 烟,
+Nearest to 楼: 榭, 城, 阁, 堂, 梅, 阑, 栏, 躔,
+Nearest to 歌: 唱, 箫, 舞, 揖, 掇, 操, 吟, 酡,
+Nearest to 与: 为, 借, 倩, 向, 似, 苻, 将, 被,
+Nearest to 多: 霖, 咎, 何, 绪, 诀, 偏, 年, 饾,
+Nearest to 声: 鸣, 闻, 辐, 响, 咽, 听, 姝, 音,
+Nearest to 南: 西, 北, 蒲, 黜, 岱, 头, 斜, 横,
+Nearest to 三: 五, 十, 八, 四, 七, 两, 二, 六,
+Nearest to 人: 客, 囗, 梅, 腌, 斯, 蛑, 能, 我,
+Nearest to 香: 熏, 窠, 芳, 酡, 花, 肤, 春, 馥,
+Nearest to 花: 芳, 早, 、, 香, 羯, 粉, 柳, 糁,
+Nearest to 如: 似, 抗, 为, 于, 菜, 醮, 於, 体,
+Nearest to 烟: 雾, 焰, 霭, 薜, 苒, 翠, 云, 荫,
+Nearest to 看: 听, 跛, 任, 见, 做, 问, 过, 立,
+Nearest to 去: 归, 来, 到, 趁, 肪, 早, 晚, 诏,
+Nearest to 得: 取, 著, 了, 遣, 能, 虺, 却, 雩,
+Average loss at step  262000 :  4.014013262748718
+Average loss at step  264000 :  4.017122986674309
+Average loss at step  266000 :  4.050949897766113
+Average loss at step  268000 :  3.9965309109687803
+Average loss at step  270000 :  3.9359382499456403
+Nearest to 云: 霭, 雾, 幔, 岫, 霞, 烟, 丑, 眯,
+Nearest to 楼: 城, 榭, 阁, 梅, 堂, 阑, 栏, 垆,
+Nearest to 歌: 唱, 箫, 舞, 掇, 揖, 父, 操, 乐,
+Nearest to 与: 为, 向, 借, 倩, 似, 被, 苻, 教,
+Nearest to 多: 霖, 咎, 何, 绪, 偏, 人, 髫, 甚,
+Nearest to 声: 鸣, 闻, 语, 音, 辐, 响, 咽, 听,
+Nearest to 南: 西, 北, 黜, 蒲, 东, 岱, 雉, 湖,
+Nearest to 三: 五, 十, 二, 四, 八, 七, 两, 六,
+Nearest to 人: 我, 梅, 多, 客, 腌, 斯, 伪, 能,
+Nearest to 香: 熏, 窠, 芳, 馥, 酡, 辋, 篽, 润,
+Nearest to 花: 芳, 早, 春, 粉, 菊, 柳, 羯, 琚,
+Nearest to 如: 似, 於, 抗, 菜, 于, 为, 醮, 而,
+Nearest to 烟: 雾, 焰, 霭, 荫, 云, 翠, 苒, 薜,
+Nearest to 看: 听, 跛, 见, 问, 任, 觅, 把, 起,
+Nearest to 去: 归, 来, 到, 趁, 肪, 便, 何, 逐,
+Nearest to 得: 取, 著, 了, 遣, 能, 却, 虺, 是,
+Average loss at step  272000 :  3.954811197280884
+Average loss at step  274000 :  3.980326234102249
+Average loss at step  276000 :  3.93386017203331
+Average loss at step  278000 :  3.9430509613752367
+Average loss at step  280000 :  3.959540168642998
+Nearest to 云: 霭, 雾, 幔, 烟, 眯, 岫, 霞, 丑,
+Nearest to 楼: 城, 榭, 阁, 堂, 梅, 栏, 阑, 拭,
+Nearest to 歌: 唱, 箫, 操, 舞, 揖, 父, 掇, 洋,
+Nearest to 与: 为, 向, 借, 倩, 被, 苻, 似, 将,
+Nearest to 多: 霖, 咎, 绪, 何, 诀, 人, 偏, 饾,
+Nearest to 声: 鸣, 闻, 响, 咽, 辐, 听, 叫, 姝,
+Nearest to 南: 西, 北, 东, 黜, 蒲, 斜, 绕, 柁,
+Nearest to 三: 五, 十, 四, 八, 两, 七, 二, 仅,
+Nearest to 人: 客, 我, 梅, 谁, 蛑, 多, 完, 囗,
+Nearest to 香: 熏, 馥, 窠, 芳, 酡, 辋, 润, 篽,
+Nearest to 花: 芳, 春, 早, 菊, 羯, 粉, 红, 柳,
+Nearest to 如: 似, 於, 于, 醮, 抗, 胚, 而, 菜,
+Nearest to 烟: 雾, 焰, 霭, 云, 溯, 苒, 薜, 暝,
+Nearest to 看: 听, 跛, 见, 觅, 起, 问, 做, 任,
+Nearest to 去: 归, 来, 趁, 到, 逐, 肪, 诏, 便,
+Nearest to 得: 取, 著, 了, 能, 虺, 遣, 却, 与,
+Average loss at step  282000 :  3.981250770688057
+Average loss at step  284000 :  4.0225316911935804
+Average loss at step  286000 :  4.0361051090955735
+Average loss at step  288000 :  4.024840277791023
+Average loss at step  290000 :  4.038963762521743
+Nearest to 云: 雾, 霭, 岫, 眯, 幔, 丑, 霞, 烟,
+Nearest to 楼: 榭, 城, 阁, 梅, 阑, 堂, 栏, 垆,
+Nearest to 歌: 唱, 箫, 舞, 揖, 掇, 操, 洋, 父,
+Nearest to 与: 为, 向, 倩, 借, 苻, 似, 将, 被,
+Nearest to 多: 霖, 咎, 何, 绪, 偏, 诀, 逸, 髫,
+Nearest to 声: 鸣, 闻, 响, 辐, 咽, 叫, 听, 姝,
+Nearest to 南: 西, 北, 蒲, 黜, 岱, 东, 斜, 柁,
+Nearest to 三: 五, 十, 七, 四, 八, 两, 二, 六,
+Nearest to 人: 客, 梅, 斯, 囗, 腌, 蛑, 谁, 能,
+Nearest to 香: 熏, 窠, 芳, 酡, 肤, 花, 春, 馥,
+Nearest to 花: 芳, 粉, 早, 枝, 香, 柳, 羯, 琚,
+Nearest to 如: 似, 抗, 于, 菜, 於, 醮, 为, 体,
+Nearest to 烟: 雾, 霭, 焰, 薜, 苒, 翠, 溯, 云,
+Nearest to 看: 听, 跛, 任, 做, 问, 见, 对, 觅,
+Nearest to 去: 归, 来, 趁, 到, 肪, 逐, 诏, 早,
+Nearest to 得: 取, 著, 了, 遣, 能, 虺, 嗔, 却,
+Average loss at step  292000 :  3.9950132737159727
+Average loss at step  294000 :  4.023692463517189
+Average loss at step  296000 :  4.0252733153104785
+Average loss at step  298000 :  3.9771504892110823
+Average loss at step  300000 :  3.9227779148817064
+Nearest to 云: 霭, 雾, 幔, 岫, 霞, 丑, 烟, 眯,
+Nearest to 楼: 城, 榭, 栏, 阑, 堂, 阁, 梅, 垆,
+Nearest to 歌: 唱, 箫, 舞, 掇, 父, 揖, 操, 乐,
+Nearest to 与: 为, 向, 倩, 借, 似, 苻, 将, 被,
+Nearest to 多: 霖, 咎, 绪, 何, 人, 髫, 偏, 甚,
+Nearest to 声: 鸣, 闻, 响, 语, 音, 辐, 听, 咽,
+Nearest to 南: 西, 北, 黜, 蒲, 东, 岱, 雉, 柁,
+Nearest to 三: 五, 十, 二, 四, 七, 八, 两, 六,
+Nearest to 人: 我, 多, 斯, 梅, 伪, 腌, 客, 自,
+Nearest to 香: 熏, 窠, 芳, 馥, 酡, 吃, 润, 肤,
+Nearest to 花: 芳, 柳, 粉, 春, 早, 杏, 菊, 红,
+Nearest to 如: 似, 於, 于, 为, 抗, 而, 菜, 醮,
+Nearest to 烟: 雾, 焰, 霭, 荫, 袅, 苒, 翠, 云,
+Nearest to 看: 听, 跛, 见, 任, 问, 起, 觅, 把,
+Nearest to 去: 归, 来, 趁, 肪, 到, 逐, 便, 晚,
+Nearest to 得: 取, 著, 了, 遣, 能, 却, 虺, 住,
+Average loss at step  302000 :  3.957664276123047
+Average loss at step  304000 :  3.936536666750908
+Average loss at step  306000 :  3.942432480931282
+Average loss at step  308000 :  3.927708811938763
+Average loss at step  310000 :  3.9572786281108856
+Nearest to 云: 雾, 霭, 幔, 烟, 眯, 岫, 霞, 枢,
+Nearest to 楼: 城, 榭, 栏, 阁, 堂, 阑, 梅, 垆,
+Nearest to 歌: 唱, 箫, 舞, 操, 父, 吟, 揖, 掇,
+Nearest to 与: 为, 向, 借, 倩, 似, 将, 苻, 被,
+Nearest to 多: 霖, 咎, 绪, 何, 诀, 髫, 饾, 恼,
+Nearest to 声: 鸣, 闻, 响, 听, 辐, 咽, 笛, 叫,
+Nearest to 南: 西, 北, 东, 黜, 蒲, 绕, 雉, 岱,
+Nearest to 三: 五, 十, 四, 两, 七, 二, 仅, 八,
+Nearest to 人: 客, 谁, 我, 蛑, 完, 能, 斯, 梅,
+Nearest to 香: 熏, 馥, 窠, 芳, 酡, 润, 辋, 麝,
+Nearest to 花: 芳, 羯, 柳, 红, 春, 菊, 早, 粉,
+Nearest to 如: 似, 於, 抗, 胚, 醮, 于, 珉, 菜,
+Nearest to 烟: 雾, 霭, 焰, 云, 苒, 暝, 沧, 溯,
+Nearest to 看: 听, 跛, 见, 觅, 问, 起, 做, 任,
+Nearest to 去: 归, 来, 趁, 到, 肪, 却, 便, 逐,
+Nearest to 得: 取, 著, 了, 能, 虺, 遣, 却, 住,
+Average loss at step  312000 :  3.969511334180832
+Average loss at step  314000 :  4.02814808011055
+Average loss at step  316000 :  4.015308812975883
+Average loss at step  318000 :  4.0287819575071335
+Average loss at step  320000 :  4.0153977644443515
+Nearest to 云: 雾, 霭, 岫, 眯, 幔, 烟, 霞, 丑,
+Nearest to 楼: 榭, 城, 阑, 梅, 阁, 堂, 栏, 垆,
+Nearest to 歌: 唱, 箫, 舞, 父, 掇, 揖, 操, 酡,
+Nearest to 与: 为, 倩, 向, 借, 苻, 将, 似, 答,
+Nearest to 多: 霖, 咎, 何, 绪, 偏, 逸, 饾, 诀,
+Nearest to 声: 鸣, 闻, 响, 辐, 听, 咽, 叫, 阕,
+Nearest to 南: 西, 北, 蒲, 岱, 黜, 东, 斜, 横,
+Nearest to 三: 五, 十, 两, 四, 七, 八, 二, 六,
+Nearest to 人: 客, 斯, 梅, 囗, 腌, 春, 谁, 能,
+Nearest to 香: 熏, 窠, 芳, 酡, 馥, 肤, 润, 麝,
+Nearest to 花: 芳, 粉, 、, 柳, 早, 羯, 香, 琚,
+Nearest to 如: 似, 抗, 菜, 于, 於, 为, 醮, 体,
+Nearest to 烟: 雾, 霭, 焰, 薜, 苒, 溯, 云, 袅,
+Nearest to 看: 听, 跛, 任, 见, 做, 觅, 对, 问,
+Nearest to 去: 归, 来, 趁, 到, 肪, 逐, 早, 诏,
+Nearest to 得: 取, 著, 了, 能, 却, 遣, 住, 虺,
+Average loss at step  322000 :  3.9826261734962465
+Average loss at step  324000 :  4.02375778901577
+Average loss at step  326000 :  4.014491985082627
+Average loss at step  328000 :  3.9421575504541395
+Average loss at step  330000 :  3.929269261956215
+Nearest to 云: 雾, 霭, 幔, 烟, 岫, 霞, 眯, 崄,
+Nearest to 楼: 城, 榭, 栏, 堂, 阑, 梅, 垆, 阁,
+Nearest to 歌: 唱, 箫, 舞, 父, 掇, 揖, 操, 词,
+Nearest to 与: 为, 向, 倩, 借, 苻, 似, 共, 将,
+Nearest to 多: 霖, 咎, 人, 何, 绪, 髫, 偏, 年,
+Nearest to 声: 鸣, 闻, 响, 语, 听, 音, 笛, 辐,
+Nearest to 南: 北, 西, 黜, 岱, 蒲, 东, 雉, 柁,
+Nearest to 三: 五, 二, 十, 四, 七, 八, 六, 一,
+Nearest to 人: 我, 多, 梅, 能, 郎, 斯, 应, 客,
+Nearest to 香: 熏, 窠, 芳, 馥, 酡, 蜜, 润, 篽,
+Nearest to 花: 芳, 柳, 粉, 红, 春, 杏, 早, 菊,
+Nearest to 如: 似, 於, 为, 于, 抗, 而, 醮, 菜,
+Nearest to 烟: 雾, 霭, 焰, 云, 荫, 袅, 翠, 苒,
+Nearest to 看: 听, 跛, 见, 任, 问, 觅, 趁, 把,
+Nearest to 去: 归, 来, 趁, 到, 肪, 便, 逐, 过,
+Nearest to 得: 取, 著, 了, 遣, 能, 却, 住, 幻,
+Average loss at step  332000 :  3.9672165391445158
+Average loss at step  334000 :  3.919610934495926
+Average loss at step  336000 :  3.9274029327630995
+Average loss at step  338000 :  3.935483746469021
+Average loss at step  340000 :  3.939955262899399
+Nearest to 云: 雾, 幔, 霭, 眯, 烟, 丑, 霞, 岫,
+Nearest to 楼: 城, 榭, 栏, 阑, 阁, 堂, 梅, 垆,
+Nearest to 歌: 唱, 箫, 舞, 操, 掇, 父, 吟, 揖,
+Nearest to 与: 为, 向, 倩, 借, 将, 似, 苻, 被,
+Nearest to 多: 霖, 咎, 绪, 何, 人, 诀, 髫, 偏,
+Nearest to 声: 鸣, 闻, 响, 听, 咽, 辐, 叫, 笛,
+Nearest to 南: 北, 西, 蒲, 黜, 东, 岱, 柁, 绕,
+Nearest to 三: 五, 十, 四, 七, 二, 仅, 两, 八,
+Nearest to 人: 客, 我, 梅, 蛑, 斯, 多, 谁, 能,
+Nearest to 香: 熏, 馥, 窠, 麝, 芳, 酡, 润, 辋,
+Nearest to 花: 红, 芳, 春, 柳, 早, 粉, 羯, 菊,
+Nearest to 如: 似, 於, 抗, 醮, 胚, 珉, 菜, 而,
+Nearest to 烟: 雾, 霭, 焰, 云, 苒, 薜, 暝, 沧,
+Nearest to 看: 跛, 听, 见, 问, 觅, 任, 拜, 活,
+Nearest to 去: 归, 来, 趁, 到, 肪, 便, 却, 过,
+Nearest to 得: 取, 著, 了, 能, 遣, 住, 虺, 是,
+Average loss at step  342000 :  3.972125816702843
+Average loss at step  344000 :  4.013906143307686
+Average loss at step  346000 :  3.999724469423294
+Average loss at step  348000 :  4.036932080388069
+Average loss at step  350000 :  4.001952386498451
+Nearest to 云: 雾, 霭, 岫, 幔, 眯, 霞, 丑, 烟,
+Nearest to 楼: 榭, 城, 梅, 栏, 阁, 阑, 堂, 垆,
+Nearest to 歌: 唱, 箫, 舞, 揖, 掇, 父, 吟, 酡,
+Nearest to 与: 为, 倩, 向, 借, 苻, 将, 教, 似,
+Nearest to 多: 霖, 咎, 何, 绪, 诀, 逸, 偏, 年,
+Nearest to 声: 鸣, 闻, 响, 听, 辐, 阕, 叫, 笛,
+Nearest to 南: 西, 北, 岱, 蒲, 黜, 柁, 横, 东,
+Nearest to 三: 五, 十, 四, 七, 两, 二, 六, 仅,
+Nearest to 人: 梅, 春, 谁, 客, 腌, 我, 囗, 斯,
+Nearest to 香: 熏, 窠, 芳, 酡, 馥, 润, 肤, 麝,
+Nearest to 花: 芳, 
+, 柳, 、, 早, 琚, 羯, 春,
+Nearest to 如: 似, 抗, 於, 为, 醮, 于, 菜, 体,
+Nearest to 烟: 雾, 霭, 苒, 薜, 焰, 翠, 袅, 溯,
+Nearest to 看: 听, 跛, 任, 觅, 做, 见, 对, 问,
+Nearest to 去: 归, 来, 趁, 到, 肪, 早, 逐, 程,
+Nearest to 得: 取, 著, 了, 能, 番, 与, 住, 却,
+Average loss at step  352000 :  3.9818272691965104
+Average loss at step  354000 :  4.0121384358406065
+Average loss at step  356000 :  4.009048129796982
+Average loss at step  358000 :  3.905679152727127
+Average loss at step  360000 :  3.939049716711044
+Nearest to 云: 霭, 雾, 幔, 霞, 烟, 岫, 天, 眯,
+Nearest to 楼: 城, 榭, 栏, 阑, 堂, 垆, 梅, 阁,
+Nearest to 歌: 唱, 箫, 舞, 父, 揖, 掇, 乐, 操,
+Nearest to 与: 为, 向, 倩, 借, 苻, 教, 共, 将,
+Nearest to 多: 霖, 绪, 咎, 何, 髫, 人, 偏, 饾,
+Nearest to 声: 鸣, 闻, 响, 语, 音, 笛, 阕, 听,
+Nearest to 南: 北, 西, 岱, 黜, 东, 柁, 蒲, 雉,
+Nearest to 三: 五, 二, 十, 四, 七, 六, 八, 仅,
+Nearest to 人: 我, 郎, 客, 斯, 多, 蛑, 梅, 僧,
+Nearest to 香: 熏, 窠, 芳, 酡, 馥, 蜜, 润, 麝,
+Nearest to 花: 柳, 芳, 粉, 春, 红, 雪, 杏, 早,
+Nearest to 如: 似, 於, 抗, 为, 于, 菜, 醮, 胚,
+Nearest to 烟: 雾, 霭, 焰, 袅, 云, 荫, 苒, 翠,
+Nearest to 看: 听, 跛, 见, 任, 问, 觅, 趁, 摘,
+Nearest to 去: 归, 来, 趁, 肪, 到, 逐, 过, 少,
+Nearest to 得: 取, 著, 了, 遣, 能, 却, 幻, 嗔,
+Average loss at step  362000 :  3.953789537549019
+Average loss at step  364000 :  3.9040970672369
+Average loss at step  366000 :  3.926974903464317
+Average loss at step  368000 :  3.9408028925657272
+Average loss at step  370000 :  3.9266633732318876
+Nearest to 云: 雾, 霭, 幔, 烟, 眯, 霞, 岫, 丑,
+Nearest to 楼: 城, 榭, 栏, 梅, 阑, 堂, 阁, 垆,
+Nearest to 歌: 唱, 箫, 舞, 父, 操, 揖, 掇, 吟,
+Nearest to 与: 为, 向, 倩, 借, 苻, 共, 教, 将,
+Nearest to 多: 霖, 咎, 绪, 何, 诀, 人, 恼, 饾,
+Nearest to 声: 鸣, 响, 闻, 阕, 听, 叫, 姝, 辐,
+Nearest to 南: 北, 西, 蒲, 黜, 东, 岱, 柁, 绕,
+Nearest to 三: 五, 十, 四, 二, 两, 七, 仅, 六,
+Nearest to 人: 客, 我, 斯, 能, 蛑, 梅, 谁, 多,
+Nearest to 香: 熏, 馥, 窠, 麝, 芳, 润, 酡, 辋,
+Nearest to 花: 春, 芳, 红, 柳, 椰, 早, 菊, 釭,
+Nearest to 如: 似, 於, 抗, 醮, 胚, 8, 于, 珉,
+Nearest to 烟: 雾, 霭, 焰, 云, 苒, 袅, 溯, 沧,
+Nearest to 看: 听, 跛, 见, 觅, 任, 问, 活, 拜,
+Nearest to 去: 归, 来, 趁, 肪, 到, 却, 逐, 过,
+Nearest to 得: 取, 著, 能, 了, 与, 虺, 遣, 住,
+Average loss at step  372000 :  3.9595042382478716
+Average loss at step  374000 :  4.009141517043114
+Average loss at step  376000 :  3.9887523987293245
+Average loss at step  378000 :  4.016844593048096
+Average loss at step  380000 :  4.0065985406637195
+Nearest to 云: 雾, 霭, 岫, 幔, 霞, 眯, 丑, 烟,
+Nearest to 楼: 榭, 城, 梅, 栏, 阑, 垆, 阁, 堂,
+Nearest to 歌: 唱, 舞, 箫, 掇, 揖, 酡, 吟, 操,
+Nearest to 与: 为, 倩, 向, 借, 苻, 教, 似, 答,
+Nearest to 多: 霖, 何, 咎, 绪, 逸, 诀, 饾, 髫,
+Nearest to 声: 鸣, 响, 闻, 听, 辐, 阕, 叫, 音,
+Nearest to 南: 北, 西, 蒲, 岱, 黜, 斜, 横, 柁,
+Nearest to 三: 五, 十, 七, 二, 四, 六, 两, 八,
+Nearest to 人: 梅, 客, 蛑, 我, 谁, 腌, 能, 斯,
+Nearest to 香: 熏, 窠, 芳, 酡, 润, 馥, 麝, 肤,
+Nearest to 花: 芳, 柳, 、, 春, 红, 早, 羯, 琚,
+Nearest to 如: 似, 抗, 於, 于, 为, 而, 菜, 醮,
+Nearest to 烟: 雾, 霭, 苒, 薜, 袅, 焰, 沧, 溯,
+Nearest to 看: 听, 任, 跛, 趁, 见, 对, 觅, 做,
+Nearest to 去: 归, 来, 趁, 到, 肪, 早, 杳, 逐,
+Nearest to 得: 取, 著, 了, 能, 番, 与, 是, 虺,
+Average loss at step  382000 :  3.9761951528787614
+Average loss at step  384000 :  4.008225230574608
+Average loss at step  386000 :  4.001515697717666
+Average loss at step  388000 :  3.8891437814235688
+Average loss at step  390000 :  3.924807709097862
+Nearest to 云: 雾, 霭, 霞, 岫, 幔, 烟, 丑, 天,
+Nearest to 楼: 城, 栏, 榭, 梅, 堂, 阑, 垆, 阁,
+Nearest to 歌: 唱, 箫, 舞, 掇, 父, 揖, 乐, 操,
+Nearest to 与: 为, 向, 倩, 教, 共, 苻, 借, 似,
+Nearest to 多: 霖, 咎, 绪, 何, 髫, 饾, 逸, 诀,
+Nearest to 声: 闻, 鸣, 响, 阕, 笛, 语, 音, 听,
+Nearest to 南: 北, 西, 岱, 东, 黜, 柁, 蒲, 雉,
+Nearest to 三: 五, 二, 十, 七, 四, 六, 八, 一,
+Nearest to 人: 我, 郎, 蛑, 客, 僧, 梅, 自, 多,
+Nearest to 香: 熏, 窠, 芳, 麝, 馥, 酡, 蜜, 润,
+Nearest to 花: 柳, 芳, 粉, 。, 红, 杏, 香, 菊,
+Nearest to 如: 似, 於, 抗, 于, 为, 菜, 醮, 在,
+Nearest to 烟: 雾, 霭, 焰, 袅, 荫, 云, 苒, 翠,
+Nearest to 看: 听, 跛, 任, 见, 觅, 趁, 问, 摘,
+Nearest to 去: 归, 来, 趁, 肪, 到, 逐, 过, 向,
+Nearest to 得: 取, 著, 了, 能, 遣, 却, 有, 虺,
+Average loss at step  392000 :  3.9623558534383774
+Average loss at step  394000 :  3.894569488763809
+Average loss at step  396000 :  3.925011981844902
+Average loss at step  398000 :  3.9339944975972174
+Average loss at step  400000 :  3.9287004321813583
+Nearest to 云: 雾, 霭, 幔, 烟, 霞, 眯, 崄, 岫,
+Nearest to 楼: 城, 榭, 栏, 堂, 梅, 垆, 阁, 阑,
+Nearest to 歌: 唱, 箫, 舞, 掇, 操, 父, 乐, 揖,
+Nearest to 与: 为, 倩, 向, 借, 共, 苻, 将, 教,
+Nearest to 多: 霖, 咎, 绪, 何, 人, 诀, 圻, 恼,
+Nearest to 声: 鸣, 响, 闻, 叫, 听, 辐, 阕, 笛,
+Nearest to 南: 北, 西, 黜, 东, 蒲, 岱, 柁, 绕,
+Nearest to 三: 五, 十, 七, 二, 仅, 两, 四, 六,
+Nearest to 人: 我, 客, 斯, 能, 梅, 蛑, 谁, 多,
+Nearest to 香: 熏, 馥, 芳, 窠, 麝, 润, 酡, 辋,
+Nearest to 花: 柳, 春, 芳, 红, 菊, 早, 椰, 粉,
+Nearest to 如: 似, 於, 抗, 胚, 醮, 8, 珉, 于,
+Nearest to 烟: 雾, 霭, 焰, 暝, 薜, 袅, 苒, 云,
+Nearest to 看: 听, 跛, 见, 任, 觅, 问, 拜, 逐,
+Nearest to 去: 归, 趁, 来, 肪, 到, 却, 桨, 过,
+Nearest to 得: 取, 著, 能, 了, 与, 虺, 遣, 是,
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+Python 3.5.2 (v3.5.2:4def2a2901a5, Jun 25 2016, 22:18:55) [MSC v.1900 64 bit (AMD64)] on win32
