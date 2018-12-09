@@ -1,3 +1,4 @@
+# _*_ coding:utf-8 _*_
 # Copyright 2015 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -37,7 +38,7 @@ filename = data_path + 'QuanSongCi.txt'
 # Read the data into a list of strings.
 def read_data(filename):
   """convert file content to a list of words."""
-  f = open(filename)
+  f = open(filename,'r', encoding='UTF-8')
   data = list(f.read())
   return data
 
@@ -144,38 +145,47 @@ graph = tf.Graph()
 with graph.as_default():
 
   # Input data.
-  train_inputs = tf.placeholder(tf.int32, shape=[batch_size])
-  train_labels = tf.placeholder(tf.int32, shape=[batch_size, 1])
-  valid_dataset = tf.constant(valid_examples, dtype=tf.int32)
+  with tf.name_scope('inputs'):
+    train_inputs = tf.placeholder(tf.int32, shape=[batch_size])
+    train_labels = tf.placeholder(tf.int32, shape=[batch_size, 1])
+    valid_dataset = tf.constant(valid_examples, dtype=tf.int32)
 
   # Ops and variables pinned to the CPU because of missing GPU implementation
   with tf.device('/cpu:0'):
     # Look up embeddings for inputs.
-    embeddings = tf.Variable(
-        tf.random_uniform([vocabulary_size, embedding_size], -1.0, 1.0))
-    embed = tf.nn.embedding_lookup(embeddings, train_inputs)
+    with tf.name_scope('embeddings'):
+      embeddings = tf.Variable(
+          tf.random_uniform([vocabulary_size, embedding_size], -1.0, 1.0))
+      embed = tf.nn.embedding_lookup(embeddings, train_inputs)
 
     # Construct the variables for the NCE loss
-    nce_weights = tf.Variable(
-        tf.truncated_normal([vocabulary_size, embedding_size],
-                            stddev=1.0 / math.sqrt(embedding_size)))
-    nce_biases = tf.Variable(tf.zeros([vocabulary_size]))
+    with tf.name_scope('weights'):
+      nce_weights = tf.Variable(
+          tf.truncated_normal(
+              [vocabulary_size, embedding_size],
+              stddev=1.0 / math.sqrt(embedding_size)))
+    with tf.name_scope('biases'):
+      nce_biases = tf.Variable(tf.zeros([vocabulary_size]))
 
   # Compute the average NCE loss for the batch.
   # tf.nce_loss automatically draws a new sample of the negative labels each
   # time we evaluate the loss.
   # Explanation of the meaning of NCE loss:
   #   http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
-  loss = tf.reduce_mean(
-      tf.nn.nce_loss(weights=nce_weights,
-                     biases=nce_biases,
-                     labels=train_labels,
-                     inputs=embed,
-                     num_sampled=num_sampled,
-                     num_classes=vocabulary_size))
+  with tf.name_scope('loss'):
+    loss = tf.reduce_mean(
+        tf.nn.nce_loss(
+            weights=nce_weights,
+            biases=nce_biases,
+            labels=train_labels,
+            inputs=embed,
+            num_sampled=num_sampled,
+            num_classes=vocabulary_size))
 
   # Construct the SGD optimizer using a learning rate of 1.0.
-  optimizer = tf.train.GradientDescentOptimizer(1.0).minimize(loss)
+  with tf.name_scope('optimizer'):
+    # optimizer = tf.train.GradientDescentOptimizer(1.0).minimize(loss)
+    optimizer = tf.train.AdamOptimizer().minimize(loss)
 
   # Compute the cosine similarity between minibatch examples and all embeddings.
   norm = tf.sqrt(tf.reduce_sum(tf.square(embeddings), 1, keep_dims=True))
@@ -228,7 +238,7 @@ with tf.Session(graph=graph) as session:
         print(log_str)
   final_embeddings = normalized_embeddings.eval()
 
-  # word2vec中，可以使用如下代码来保存最终生成的embeding
+  # word2vec中，可以使用如下代码来保存最终生成的embeddings
   np.save(data_path + 'embedding.npy', final_embeddings)
 
 

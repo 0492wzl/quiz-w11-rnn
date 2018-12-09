@@ -51,6 +51,7 @@ class Model():
                 embed = tf.constant(embedding, name='embedding')
             else:
                 # if not, initialize an embedding and train it.
+                print("========no exit embedding file===========")
                 embed = tf.get_variable(
                     'embedding', [self.num_words, self.dim_embedding])
                 tf.summary.histogram('embed', embed)

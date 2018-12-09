@@ -27,6 +27,9 @@ def parse_args(check=True):
     parser.add_argument('--dictionary', type=str, default='./data/dictionary.json',
                         help='path to dictionary.json.')
 
+    parser.add_argument('--embedding_file', type=str, default='./data/embedding.npy',
+                        help='path to embedding.npy.')
+
     parser.add_argument('--reverse_dictionary', type=str, default='./data/reverse_dictionary.json',
                         help='path to reverse_dictionary.json.')
 

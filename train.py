@@ -48,7 +48,12 @@ with tf.Session() as sess:
         logging.debug('restore from [{0}]'.format(checkpoint_path))
 
     except Exception:
-        logging.debug('no check point found....')
+        try:
+            checkpoint_path = tf.train.latest_checkpoint("./rnn_log")
+            saver.restore(sess, checkpoint_path)
+            logging.debug('restore from [{0}]'.format(checkpoint_path))
+        except Exception:
+            logging.debug('no check point found....')
 
     for x in range(1):
         logging.debug('epoch [{0}]....'.format(x))
