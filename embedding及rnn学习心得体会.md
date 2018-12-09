@@ -1,27 +1,39 @@
-* embedding ���⼰�ĵ���� *
-** embedding���� **
-> 1. embedding����������ɴ�Ƕ�룬Ҳ�ƴ��������ǻ��ڷֲ���˵��ʹ��������ṹ���ɵ�float����ĳ��ܾ���
->> �����ڴ�ͳ��one-hot�ʱ�ʾ�������ü��ϡ���int���������ʾ��
->> word emedding��Ψһ��float�������й�ϵ��������(��ȻҲ��float)֮��Ƕ������ʹ֮����һ���Ĵ���������Ϣ��
->> ���ҿ��԰Ѿ����Ĵʻ�ѹ��Ƕ�뵽ָ���ĸ�Сά�ȵĿռ�֮�С�
-> 2. word2vec��NPL������������ѵ�����������Ĺ��ߡ�
->> word2vec�����޼ලѵ�����񣬲���Ҫʹ���߽�ѵ�����ݼ��궨��ǩ���룬�����˴����˹���ǵĹ�������
->>  tensorflow �ṩ��word2vec_basic,�����ɸ���ɷ������ĵĴ�����ѵ����������Ҫʹ������-���ת����json�����ұ�֤utf8��ȡ
-** embedding�ĵ���� **
-> 1. embedding���ڴ�ͳone-hot����ĵط����ڣ�������Ҫ������ά�Ŀռ�Ϳ��Ա�ʾͬ�������ݣ�
->> ���ң������˴���ʻ�֮��Ĵ�����Ϣ�����������Ϣ������ʲô��Ŀǰ�����ܶ���������
-> 2.word embedding���ִ�Ψһƥ����һ��������������һ�ʶ���ĳ���ò�Ʋ���֧�֣�����������ʫ����ʵ��ͦ���Ӳ��
-> 3.word embedding����Ч��ͦ��rnn��ѵ��Ч�ʣ�rnnָ�������ļ���Ҳ��������CPU��GPU�Ĺ���
-> 4.Adom�Ż�����emeddingѵ���Ż������ԣ�����ѵ��step�ǲ��ǿ������ӣ�
-* rnn ���⼰�ĵ���� *
-** rnn ���� **
-> 1. Recurrent Neural Networks ѭ�������磬���������������ݣ����������Ҳ��ӵ�ʱ�����л�����
-> 2. rnn��ǰ��������Ϊ�����һ����Ӱ�쵽�����������Ԫ��֮���ʱ�����Ϣ
-> 3. ��BP�㷨��rnn��loss����ǰ�����в��loss�ļӺͣ���W��S���������tanh������ݶ��½���ʱ�����ݶȱ�ը���ݶ���ʧ�ı���
-> 4. ������Recursive Neural Networks �ݹ������磬ѭ���������ǻ���ʱ��ĵݹ飬�ݹ��������ǻ��ڽṹ�ĵݹ�
-** rnn �ĵ���� **
-> 1. eval������ִ����Ļ����������ʵӰ����飬666���˵�������ĳ�ʼ��Ҳ�ǳ���Ҫ��orthogonal��ʼ����LSTM����ʹ��SVD������������ʼ��
-> 2. rnn�����������ݼ��Ĳ�ͬ��������
->>   ��������ģ��(�δ����ݼ����δ�������)��������(�ʶԴʵ����ݼ�)����ʶ��(�ʶ���Ƶ�����ź�)
->>   ��ͼƬ����CNN��ϻ�������ͼ˵��������
-> 3. ��ʱ��t�ܴ�ʱ��\prod_{j=k+1}^{t}{tanh^{'}}W_{s} �ͻ�������0��ͬ���� W_{s} �ܴ�ʱ \prod_{j=k+1}^{t}{tanh^{'}}W_{s} �ͻ���������������RNN���ݶ���ʧ�ͱ�ը��ԭ��
+* embedding 理解及心得体会 *
+
+** embedding理解 **
+
+> 1. embedding在中文理解成词嵌入，也称词向量，是基于分布假说的使用神经网络结构生成的float编码的稠密矩阵。
+>> 区别于传统的one-hot词表示方法，用简洁稀疏的int编号向量表示；
+>> word emedding用唯一的float数在最有关系的两个词(当然也是float)之间嵌入排序，使之包含一定的词序语义信息，
+>> 而且可以把巨量的词汇压缩嵌入到指定的更小维度的空间之中。
+> 2. word2vec是NPL领域提出的针对训练出词向量的工具。
+>> word2vec属于无监督训练任务，不需要使用者将训练数据集标定标签输入，减低了大量人工标记的工作量。
+>>  tensorflow 提供了word2vec_basic,基本可改造成符合中文的词向量训练器,
+>>  但是要使用中文-序号转换的json，并且保证utf8存取
+
+** embedding心得体会 **
+
+> 1. embedding优于传统one-hot编码的地方在于，他不需要超级多维的空间就可以表示同样的数据，
+>> 并且，保留了词语词汇之间的词序信息。但是这个信息具体是什么？目前还不能定量描述。
+> 2.word embedding将字词唯一匹配了一个向量，但对于一词多义的场景貌似并不支持，这对理解古文诗词其实是挺大的硬伤
+> 3.word embedding能有效的挺高rnn的训练效率，rnn指向向量的计算也天生符合CPU，GPU的构造
+> 4.Adom优化器对emedding训练优化不明显，考虑训练step是不是可以增加，
+
+* rnn 理解及心得体会 *
+
+** rnn 理解 **
+
+> 1. Recurrent Neural Networks 循环神经网络，用来处理序列数据，语言是最常见也最复杂的时间序列化数据
+> 2. rnn将前面的输出作为输入的一部分影响到输出，保留了元素之间的时序等信息
+> 3. 在BP算法中rnn的loss等于前面所有层的loss的加和，其W跟S矩阵参数的tanh激活，在梯度下降的时会有梯度爆炸或梯度消失的悲剧
+> 4. 区别于Recursive Neural Networks 递归神经网络，循环神经网络是基于时间的递归，递归神经网络是基于结构的递归
+
+** rnn 心得体会 **
+
+> 1. eval结果出现大量的换行情况，着实影响检验，666结果说词向量的初始化也非常重要，orthogonal初始化，LSTM就是使用SVD将参数正交初始化
+> 2. rnn根据输入数据集的不同，能用于
+>>   语言生成模型(宋词数据集，宋词生成器)机器翻译(词对词的数据集)语音识别(词对音频音波信号)
+>>   与图片分类CNN结合还能做看图说话的任务。
+> 3. 当时间t很大时，梯度下降关于tanh，W的偏导数就会趋近于0，
+     同理当 W 很大时梯度下降关于tanh，W的偏导数就会趋近于无穷，这就是RNN中梯度消失和爆炸的原因
+     LSTM就是为了解决梯度爆炸或梯度消失的问题。
