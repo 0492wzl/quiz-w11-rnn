@@ -18,6 +18,7 @@ http://edu.csdn.net/lecturer/1427
 ![embedding结果](./data/tsne.png)
 
 提供一个文档，说明自己对embedding的理解，代码的分析，以及对上述图片的结果分析和认识。-40分
+
 [embedding及rnn学习心得体会](embedding及rnn学习心得体会.md)
 
 
@@ -47,7 +48,7 @@ np.save('embedding.npy', final_embeddings)
 
 #### 作业评价标准
 训练的输出log输出中可以看到下述内容
-** [tinymind训练结果](https://www.tinymind.com/executions/2m1yxtp9)** 
+### [tinymind训练结果](https://www.tinymind.com/executions/2m1yxtp9)
 
 
 ![宋词eval结果](eval结果.png)
