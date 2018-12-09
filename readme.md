@@ -9,9 +9,7 @@ http://edu.csdn.net/lecturer/1427
 
 **TinyMind上没有对中文字体的很好的支持，这里的作业需要在本地完成**
 
-参考[word2vec](https://www.tensorflow.org/tutorials/word2vec)的内容，以下述脚本为基础，完成对本作业提供的《全宋词》的embedding.
-
-https://www.github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutorials/word2vec/word2vec_basic.py
+参考[word2vec官网简介](https://www.tensorflow.org/tutorials/word2vec)的内容，以[word2vec脚本](https://www.github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutorials/word2vec/word2vec_basic.py)为基础，完成对本作业提供的《全宋词》的embedding
 
 #### 作业评价标准
 
@@ -20,7 +18,7 @@ https://www.github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutor
 ![embedding结果](./data/tsne.png)
 
 提供一个文档，说明自己对embedding的理解，代码的分析，以及对上述图片的结果分析和认识。-40分
-![embedding及rnn学习心得体会](embedding及rnn学习心得体会.md)
+[embedding及rnn学习心得体会](embedding及rnn学习心得体会.md)
 
 
 #### 要点提示
@@ -51,8 +49,9 @@ np.save('embedding.npy', final_embeddings)
 训练的输出log输出中可以看到下述内容
 ** [tinymind训练结果](https://www.tinymind.com/executions/2m1yxtp9)** 
 
-![宋词eval结果](./eval结果.png)
-![宋词eval结果](./宋词生成器eval结果.png)
+
+![宋词eval结果](eval结果.png)
+![宋词eval结果](宋词生成器eval结果.png)
 
 可以明确看到，RNN学会了标点的使用，记住了一些词牌的名字。
 
@@ -64,7 +63,7 @@ np.save('embedding.npy', final_embeddings)
 
 提供一个文档，描述自己对rnn的理解和训练rnn的过程中的心得体会。对自己输出的结果的理解以及输出的解释。40分
 
-![embedding及rnn学习心得体会](embedding及rnn学习心得体会.md)
+[embedding及rnn学习心得体会](embedding及rnn学习心得体会.md)
 
 #### 要点提示
 
