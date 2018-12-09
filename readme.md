@@ -1,11 +1,6 @@
 # 简介
 http://edu.csdn.net/lecturer/1427
 
-# TinymMind上GPU运行费用较贵，每 CPU 每小时 $0.09，每 GPU 每小时 $0.99，所有作业内容推荐先在本地运行出一定的结果，保证运行正确之后，再上传到TinyMind上运行。初始运行推荐使用CPU运行资源，待所有代码确保没有问题之后，再启动GPU运行。
-
-
-**本作业用4CPU的速度也可以接受。考虑成本问题，本作业可以用TinyMind上的CPU资源来运行**
-
 ## 作业内容
 
 使用tensorflow中的rnn相关操作，以作业提供的《全宋词》为训练数据，训练一个人工智能写词机。
@@ -14,21 +9,18 @@ http://edu.csdn.net/lecturer/1427
 
 **TinyMind上没有对中文字体的很好的支持，这里的作业需要在本地完成**
 
-参考https://www.tensorflow.org/tutorials/word2vec的内容，以下述脚本为基础，完成对本作业提供的《全宋词》的embedding.
+参考[word2vec](https://www.tensorflow.org/tutorials/word2vec)的内容，以下述脚本为基础，完成对本作业提供的《全宋词》的embedding.
 
 https://www.github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutorials/word2vec/word2vec_basic.py
 
 #### 作业评价标准
-学员需要提交下述图片作为作业成果，该文件在embedding脚本运行完之后输出。
-
-![embedding](tsne.png)
 
 图片中意义接近的词，如数字等(参考图中红圈标记)，距离比较近（一这个数字是个特例，离其他数字比较远）。-60分
 
-该文件中位置相近的字没有明确相似性的，不予及格。
+![embedding结果](./data/tsne.png)
 
 提供一个文档，说明自己对embedding的理解，代码的分析，以及对上述图片的结果分析和认识。-40分
-
+![embedding及rnn学习心得体会](embedding及rnn学习心得体会.md)
 
 
 #### 要点提示
@@ -57,30 +49,10 @@ np.save('embedding.npy', final_embeddings)
 
 #### 作业评价标准
 训练的输出log输出中可以看到下述内容
+** [tinymind训练结果](https://www.tinymind.com/executions/2m1yxtp9)** 
 
-```sh
-2018-01--- --:--:-,114 - DEBUG - sample.py:77 - ==============[江神子]==============
-2018-01--- --:--:-,114 - DEBUG - sample.py:78 - 江神子寿韵）
-
-一里春风，一里春风，一里春风，一里春风，不是春风。
-
-一里春风，不是春风，不是春风。不是春风，不是春风。
-
-浣溪沙（春
-2018-01--- --:--:-,556 - DEBUG - sample.py:77 - ==============[蝶恋花]==============
-2018-01--- --:--:-,557 - DEBUG - sample.py:78 - 蝶恋花寿韵）
-
-春风不处。一里春风，一里春风，不是春风。不是春风，不是春风，不是春风。
-
-一里春风，不是春风，不是春风。不是春风，不是
-2018-01--- --:--:-,938 - DEBUG - sample.py:77 - ==============[渔家傲]==============
-2018-01--- --:--:-,940 - DEBUG - sample.py:78 - 渔家傲
-一里春风，一里春风，一里春风，一里春风，不是春风。
-
-水调歌头（寿韵）
-
-春风不处，一里春风，一里春风，一里春风，不是春风。
-```
+![宋词eval结果](./eval结果.png)
+![宋词eval结果](./宋词生成器eval结果.png)
 
 可以明确看到，RNN学会了标点的使用，记住了一些词牌的名字。
 
@@ -91,6 +63,8 @@ np.save('embedding.npy', final_embeddings)
 > 可以直接把这些字符，复制到python命令行作为字符串，用print函数打印即可看到对应的中文。
 
 提供一个文档，描述自己对rnn的理解和训练rnn的过程中的心得体会。对自己输出的结果的理解以及输出的解释。40分
+
+![embedding及rnn学习心得体会](embedding及rnn学习心得体会.md)
 
 #### 要点提示
 
