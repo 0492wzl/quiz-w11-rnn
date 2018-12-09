@@ -51,8 +51,8 @@ np.save('embedding.npy', final_embeddings)
 ### [tinymind训练结果](https://www.tinymind.com/executions/2m1yxtp9)
 
 
-![宋词eval结果](eval结果.png)
-![宋词eval结果](宋词生成器eval结果.png)
+![宋词eval结果](./data/eval结果.png)
+![宋词eval结果](./data/eval结果1.png)
 
 可以明确看到，RNN学会了标点的使用，记住了一些词牌的名字。
 
